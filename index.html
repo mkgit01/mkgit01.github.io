@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="shortcut icon" href="/images/MK-Logo-Circle.png" type="image/x-icon">
+
+    <!-- Bootstrap 5.1.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- Style Sheet -->
+     <link rel="stylesheet" href="css/animation.css">
+     <link rel="stylesheet" href="css/style.css">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Joan&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- loader  -->
+  <div id="preloader" class="loader-wrapper">
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+    <!-- NavBar -->
+    <nav class="navbar fixed-top p-md-3 navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="https://mkgit01.github.io/">
+          <img class="main-logo" src="./images/MKlogo.gif" alt="logo" loading="lazy">
+        </a>
+        
+        
+          <img id="theme-icon" src="/images/sun.svg" alt="sun">
+        
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a onclick="showResume()" id="resume" class="nav-link resume-cv" aria-current="page">Resume</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#connect-w-us">Connect</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link resume-cv" href="/blog.html">Blog</a>
+            </li> -->
+          </ul>
+          
+        </div>
+        
+      </div>
+      
+    </nav>
+    <!-- .................resume preview.............. -->
+    <div id="resume-wrapper" class="resume-wrapper">
+      <div onclick="nextResume()" id="next-resume" class="next-btns-holder resume-next"><img class="next-btns" src="https://img.icons8.com/material-rounded/48/undefined/circled-chevron-right.png"/></div>
+      <img id="resume-img" loading="lazy" class="resume-img resume-1" src="/images/my-resume.svg" alt="resume">
+      <img id="cv" loading="lazy" class="resume-img resume-2" src="/images/MK-Nayak-cv.png" alt="cv">
+      <div onclick="prevResume()" id="prev-resume" class="next-btns-holder resume-prev"><img class="next-btns" src="https://img.icons8.com/material-rounded/48/undefined/circled-chevron-left.png"/></div>
+      <div class="resume-btn-container">
+        <a onclick="closeResume()" id="resume-closebtn" class="resume-closebtn">Close</a>
+        <a id="resume-download" class="resume-downloadBtn" href="public/MK-Nayak-Resume.pdf" download="MK Nayak Resume">Download</a>
+        <a id="cv-download" class="resume-downloadBtn" href="public/MK-Nayak-cv.pdf" download="MK Nayak CV">Download</a>
+      </div>
+      
+    </div>
+      <!-- ---------------------------------------------- -->
+      <section class="landing-page">
+        <div class="hero-text">
+          <div class="intro-name"><img class="MK-name" src="/images/1(2).svg" alt="name"></div>
+          <p  class="fs-4 fw-light theme-text tagline">A <em class="fs-4 fw-light theme-text tagline"><strong>full stack web developer</strong></em><br> and a cs geek</p>
+          <p  class="fs-6 fw-lighter theme-text pun">And I love learning new things</p>
+        </div>
+        <div class="hero-page-wrapper">
+          <a class="introduction" href="/profile.html">More about me</a>
+        </div>
+        
+      </section>
+      
+         <!--Waves Container-->
+<div>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+  </defs>
+  <g class="parallax">
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(97, 35, 155, 0.779)" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(34, 11, 56)" />
+  <use xlink:href="#gentle-wave" x="48" y="7" fill="#8a2be2" />
+  </g>
+  </svg>
+  </div>
+  <!--Waves end-->
+  
+
+  <!--Header ends-->
+      <section class="about-me">
+        <div class="svg1-wrapper">
+          <img src="./images/launch.svg" alt="svg">
+        </div>
+        
+
+        <div class="abtme-text">
+          <p class="fs-2 text-white fw-light tagline">I like to challenge myself and learn while solving problems, showing my creativity through work, giving it a unique touch</p>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-wrapper fade-in from-down">
+        <div class="skills">
+          <div class="sec-name-ts">
+            <p class="fs-1 theme-text divider">My Tech Stack</p>
+          </div>
+          <div class="svg2-wrapper">
+            <img src="images/tech-stack.svg" alt="tech">
+          </div>
+        </div>
+ 
+      <div class="skill-card-wrapper snaps-inline">
+
+        <div class="card">
+          <div class="card-body">
+            <p class="fs-5"><img loading="lazy" src="images/java.svg" alt="Java logo">Java</p>
+            <p class="fs-5"><img loading="lazy" src="images/javascript.svg" alt="javascript logo">Javascript</p>
+            <p class="fs-5"><img loading="lazy" src="images/kotlin.svg" alt="Kotlin logo">Kotlin</p>
+            <p class="fs-5"><img loading="lazy" src="images/Python.svg" alt="Python logo">Python</p>
+            <p class="fs-5"><img loading="lazy" src="images/C.svg" alt="C logo"> C</p>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <p class="fs-5 "><img loading="lazy" src="images/html.svg" alt="html logo">HTML</p>
+            <p class="fs-5 "><img loading="lazy" src="images/css.svg" alt="css logo">CSS</p>
+            <p class="fs-5 "><img loading="lazy" src="images/wordpress.svg" alt="Wordpress logo">Wordpress</p>
+            <p class="fs-5 "><img loading="lazy" src="images/bootstrap.svg" alt="bootstrap logo">BOOTSTRAP</p>
+            <p class="fs-5 "><img loading="lazy" src="images/tailwind.svg" alt="tailwind logo"> TAILWIND</p>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <p class="fs-5 "><img loading="lazy" src="images/reactJs.svg" alt="ReactJs logo"> React JS</p>
+            <p class="fs-5 "><img loading="lazy" src="images/NodeJs.svg" alt="NodeJs logo"> Node.JS</p>
+            <p class="fs-5 "><img loading="lazy" src="images/mongodb.svg" alt="MongoDB logo"> MongoDB</p>
+            <p class="fs-5 "><img loading="lazy" src="images/Mysql.svg" alt="MySQL logo"> MySQL</p>
+            <p class="fs-5 "><img loading="lazy" src="images/firebase.svg" alt="Firebase logo"> Firebase</p>
+            
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <p class="fs-5 "><img loading="lazy" src="images/Android.svg" alt="Android logo"> Android Studio</p>
+            <p class="fs-5 "><img loading="lazy" src="images/Github.svg" alt="Github logo"> Github</p>
+            <p class="fs-5 "><img loading="lazy" src="images/GitBash.svg" alt="Bash logo"> Bash</p>
+            <p class="fs-5 "><img loading="lazy" src="images/Workbench.svg" alt="Workbench logo"> Workbench</p>
+            <p class="fs-5 "><img loading="lazy" src="images/discord.svg" alt="discord logo"> Discord Bot Dev</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <p class="fs-5 "><img loading="lazy" src="images/QT.svg" alt="QT logo">QTdesigner</p>
+            
+          </div>
+        </div>
+
+      </div>
+      
+      </section>
+
+    <section id="projects" class="projects fade-in from-down">
+      <div class="svg3-wrapper sec-name">
+      <p class="fs-1 theme-text divider"><img loading="lazy" src="images/Laptop.svg" alt="project image"> Projects</p>
+      </div>
+      <div class="project">
+        <div class="project_text">
+        <p class="fs-2 text-light"><strong>Dreamcatcher Fan-site</strong></p>
+        <p class="proj-desc fs-6 text-light">This is a fan-site for the k-pop group Dreamcatcher.This website holds information about the group and playable music snippets</p>
+        <hr>
+        <p class="proj-desc fs-6 text-light">Technologies used: <strong>HTML, CSS, JAVASCRIPT, BOOTSTRAP</strong></p>
+        <div class="project-links">
+        <a target="_blank" href="https://mkgit01.github.io/Dreamcatcher-Website/">LIVE Project</a>
+        <a target="_blank" href="https://github.com/mkgit01/Dreamcatcher-Website">GitHub</a>
+        </div>
+      </div>    
+        <img loading="lazy" class="project_img rounded img-thumbnail float-end img-fluid" src="images/Dreamcatcher.jpg" alt="project 1">
+      </div>
+
+      <div class="project-2"> 
+        <img loading="lazy" class="project_img rounded float-end img-fluid" src="images/FeedApp.png" alt="project 1">
+        <div class="project_text">
+          <p class="fs-2 text-light"><strong>News App</strong></p>
+          <p class="fs-6 text-light">This is an android app which delivers tech related news everyday using apis, It also supports in-app browsing</p>
+          <hr>
+          <p class="proj-desc fs-6 text-light">Technologies used: <strong>Kotlin, Android Studio</strong></p>
+          <div class="project-links">
+        <a target="_blank" href="https://github.com/mkgit01/Feed">GitHub</a>
+        </div>
+      </div>   
+      </div>
+
+      <div class="project">
+        <div class="project_text">
+        <p class="fs-2 text-light"><strong>Discord Multipurpose Bot</strong></p>
+        <p class="fs-6 text-light">This is my very own discord bot made with Java. It can manage moderation as well as entertainment</p>
+        <hr>
+        <p class="proj-desc fs-6 text-light">Technologies used: <strong>JDA, Gradle</strong></p>
+        <div class="project-links">
+        <a target="_blank" href="https://github.com/mkgit01/Clown-King-Bot">GitHub</a>
+        </div>
+      </div>    
+        <img loading="lazy" class="project_img rounded float-end img-fluid" src="images/DiscordBOT.jpg" alt="project 1">
+      </div>
+      
+      
+      <div class="project-2"> 
+        <img loading="lazy" class="project_img rounded float-end img-fluid" src="images/PyCalc.jpg" alt="project 1">
+        <div class="project_text">
+          <p class="fs-2 text-light"><strong>Python GUI calculator</strong></p>
+          <p class="fs-6 text-light">This is a GUI calculator made with Python and PyQT5</p>
+          <hr>
+          <p class="proj-desc fs-6 text-light">Technologies used: <strong>Python, PyQT5, Bash</strong></p>
+          <div class="project-links">
+        <a href="public/calc.zip" download="Python calculator">Download Project</a>
+        <a target="_blank" href="https://github.com/mkgit01/PyGUI-Calculator">GitHub</a>
+        </div>
+      </div>   
+      </div>
+      <br>
+    </section>
+
+    <section id="connect-w-us" class="connect">
+      <p class="fs-2 theme-text sec-name divider"> Connect With Me</p>
+      <div class="connect-wrapper">
+      <div class="contact-element contact-option-wrapper">
+        <p class="theme-text fs-2 fade-in from-top">Hey there!</p>
+        <div class="contact-options">
+          <a href="mailto:mknayakofficial@gmail.com"><img loading="lazy" src="/images/gmail.svg" alt="gmail"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/minaketan-nayak/"><img loading="lazy" src="/images/linkedin.svg" alt="linkedin"></a>
+          <a target="_blank" href="https://wa.me/+918895327771"><img loading="lazy" src="/images/whatsapp.svg" alt="whatsapp"></a>
+        </div>
+      </div>
+      <div class="contact-element contact-form fade-in from-down">
+      <div id="cntctus" class="separator edited-background-color text-light"><h2>Contact</h2></div>
+      <form reset(); return false; class="px-5 edited-background-color" action="https://formsubmit.co/ed2887a57bc7a0d7e07fcdb768f6083d" method="POST">
+          <!-- Honeypot -->
+          <input type="text" class="honeypot" name="_honey">
+          
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label text-light">Your Name *</label>
+          <input type="text" class="form-control contact-name-holder" name="Name" id="username" required>
+          <div class="valid-feedback">
+            <img src="https://img.icons8.com/color/48/000000/checked--v1.png"/>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-light">Your email address *</label>
+          <input type="email" class="form-control" name="Email" id="email" aria-describedby="emailHelp" placeholder="name@example.com" required>
+          <div id="emailHelp" class="form-text text-gray">Your email address is never shared with anyone else.</div>
+        </div>
+      
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label text-light">Contact Number</label>
+          <input type="number" class="form-control" name="Phone&nbsp;No" id="phone">
+        </div>
+      
+        <div class="form-floating my-2">
+          <textarea class="msg-box" name="Message" id="message" placeholder="Leave your query here *..." required></textarea>
+      
+        </div>
+        <div class="container text-center py-2">
+            <button type="submit" class="sub-btn btn btn-light mb-4">Submit</button>
+        </div>
+      </form>
+      </div>
+    </div>
+    </section>
+
+<!-- REMEMBER TO INCLUDE SNAP-SCROLLING ON NEON BTN PAGE -->
+      <footer>
+        <div class="ftr">
+          <div class="logo-container">
+            <p>You've reached the end ;-;</p>
+          </div>
+          <div class="credit text-light"><p>© 2022 MK Nayak</p></div>
+          <div class="ftr-links">
+            <a onclick="showResume()" class="resume-cv">Resume</a>
+          <a href="#">Back to top</a>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
